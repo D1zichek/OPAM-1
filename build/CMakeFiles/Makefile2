@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\parky\N\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/N.dir/all
+all: CMakeFiles/Project.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/N.dir/codegen
+codegen: CMakeFiles/Project.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/N.dir/clean
+clean: CMakeFiles/Project.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/N.dir
+# Target rules for target CMakeFiles/Project.dir
 
 # All Build rule for target.
-CMakeFiles/N.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N.dir\build.make CMakeFiles/N.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N.dir\build.make CMakeFiles/N.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2 "Built target N"
-.PHONY : CMakeFiles/N.dir/all
+CMakeFiles/Project.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2,3 "Built target Project"
+.PHONY : CMakeFiles/Project.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/N.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/N.dir/all
+CMakeFiles/Project.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 0
-.PHONY : CMakeFiles/N.dir/rule
+.PHONY : CMakeFiles/Project.dir/rule
 
 # Convenience name for target.
-N : CMakeFiles/N.dir/rule
-.PHONY : N
+Project: CMakeFiles/Project.dir/rule
+.PHONY : Project
 
 # codegen rule for target.
-CMakeFiles/N.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N.dir\build.make CMakeFiles/N.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2 "Finished codegen for target N"
-.PHONY : CMakeFiles/N.dir/codegen
+CMakeFiles/Project.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target Project"
+.PHONY : CMakeFiles/Project.dir/codegen
 
 # clean rule for target.
-CMakeFiles/N.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\N.dir\build.make CMakeFiles/N.dir/clean
-.PHONY : CMakeFiles/N.dir/clean
+CMakeFiles/Project.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/clean
+.PHONY : CMakeFiles/Project.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

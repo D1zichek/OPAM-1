@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "N",
+					"name" : "Project",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "N::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-N-Debug-62313ae0f559475ca0aa.json",
-					"name" : "N",
+					"id" : "Project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Project-Debug-b3476a280d9262b968b5.json",
+					"name" : "Project",
 					"projectIndex" : 0
 				}
 			]

@@ -1,8 +1,14 @@
 [
 {
   "directory": "C:/Users/parky/N/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\N.dir\\main.cpp.obj -c C:\\Users\\parky\\N\\main.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Project.dir\\main.cpp.obj -c C:\\Users\\parky\\N\\main.cpp",
   "file": "C:/Users/parky/N/main.cpp",
-  "output": "CMakeFiles/N.dir/main.cpp.obj"
+  "output": "CMakeFiles/Project.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/parky/N/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Project.dir\\list.cpp.obj -c C:\\Users\\parky\\N\\list.cpp",
+  "file": "C:/Users/parky/N/list.cpp",
+  "output": "CMakeFiles/Project.dir/list.cpp.obj"
 }
 ]
