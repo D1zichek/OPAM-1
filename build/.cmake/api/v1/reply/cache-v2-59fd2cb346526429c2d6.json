@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/N"
+			"value" : "C:/Program Files (x86)/Project"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1298,78 +1298,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "MyAwesomeProgram_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/parky/N/build"
-		},
-		{
-			"name" : "MyAwesomeProgram_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "MyAwesomeProgram_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/parky/N"
-		},
-		{
-			"name" : "N_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/parky/N/build"
-		},
-		{
-			"name" : "N_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "N_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/parky/N"
-		},
-		{
 			"name" : "Project_BINARY_DIR",
 			"properties" : 
 			[
@@ -1404,18 +1332,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/parky/N"
-		},
-		{
-			"name" : "SOME_CACHE_VALUE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "ABABA"
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
 		}
 	],
 	"kind" : "cache",

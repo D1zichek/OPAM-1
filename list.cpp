@@ -8,12 +8,14 @@ list::iterator list::iterator::operator++() {
     if (_data != nullptr) {
         _data = _data->_next;
     }
+    
     return *this;
 }
 
 list::iterator list::iterator::operator++(int) {
     iterator temp = *this;
     ++(*this);
+
     return temp;
 }
 
