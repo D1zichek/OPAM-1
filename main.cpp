@@ -77,7 +77,7 @@ void test_iterator() {
     assert(*++it == 30);
     assert(++it == lst.end());
 
-    // Test post-increment
+    
     it = lst.begin();
     assert(*it++ == 10);
     assert(*it++ == 20);
@@ -117,8 +117,8 @@ void test_size() {
 
 void test_edge_cases() {
     blgt::list lst;
-    lst.erase_front();  // Should handle gracefully
-    lst.erase_back();   // Should handle gracefully
+    lst.erase_front();  
+    lst.erase_back();   
     assert(lst.empty());
 
     lst.insert_front(42);
