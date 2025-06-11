@@ -116,65 +116,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Project
+# Target rules for targets named list
 
 # Build rule for target.
-Project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Project
-.PHONY : Project
+list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 list
+.PHONY : list
 
 # fast build rule for target.
-Project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
-.PHONY : Project/fast
+list/fast:
+	$(MAKE) $(MAKESILENT) -f list\CMakeFiles\list.dir\build.make list/CMakeFiles/list.dir/build
+.PHONY : list/fast
 
-list.obj: list.cpp.obj
-.PHONY : list.obj
+#=============================================================================
+# Target rules for targets named tests_list
 
-# target to build an object file
-list.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/list.cpp.obj
-.PHONY : list.cpp.obj
+# Build rule for target.
+tests_list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests_list
+.PHONY : tests_list
 
-list.i: list.cpp.i
-.PHONY : list.i
-
-# target to preprocess a source file
-list.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/list.cpp.i
-.PHONY : list.cpp.i
-
-list.s: list.cpp.s
-.PHONY : list.s
-
-# target to generate assembly for a file
-list.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/list.cpp.s
-.PHONY : list.cpp.s
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+tests_list/fast:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_list.dir\build.make tests/CMakeFiles/tests_list.dir/build
+.PHONY : tests_list/fast
 
 # Help Target
 help:
@@ -184,13 +149,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Project
-	@echo ... list.obj
-	@echo ... list.i
-	@echo ... list.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... list
+	@echo ... tests_list
 .PHONY : help
 
 

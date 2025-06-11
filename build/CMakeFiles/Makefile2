@@ -62,52 +62,126 @@ CMAKE_BINARY_DIR = C:\Users\parky\N\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Project.dir/all
+all: list/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/Project.dir/codegen
+codegen: list/codegen
+codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: list/preinstall
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Project.dir/clean
+clean: list/clean
+clean: tests/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Project.dir
+# Directory level rules for directory list
+
+# Recursive "all" directory target.
+list/all: list/CMakeFiles/list.dir/all
+.PHONY : list/all
+
+# Recursive "codegen" directory target.
+list/codegen: list/CMakeFiles/list.dir/codegen
+.PHONY : list/codegen
+
+# Recursive "preinstall" directory target.
+list/preinstall:
+.PHONY : list/preinstall
+
+# Recursive "clean" directory target.
+list/clean: list/CMakeFiles/list.dir/clean
+.PHONY : list/clean
+
+#=============================================================================
+# Directory level rules for directory tests
+
+# Recursive "all" directory target.
+tests/all: tests/CMakeFiles/tests_list.dir/all
+.PHONY : tests/all
+
+# Recursive "codegen" directory target.
+tests/codegen: tests/CMakeFiles/tests_list.dir/codegen
+.PHONY : tests/codegen
+
+# Recursive "preinstall" directory target.
+tests/preinstall:
+.PHONY : tests/preinstall
+
+# Recursive "clean" directory target.
+tests/clean: tests/CMakeFiles/tests_list.dir/clean
+.PHONY : tests/clean
+
+#=============================================================================
+# Target rules for target list/CMakeFiles/list.dir
 
 # All Build rule for target.
-CMakeFiles/Project.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2,3 "Built target Project"
-.PHONY : CMakeFiles/Project.dir/all
+list/CMakeFiles/list.dir/all:
+	$(MAKE) $(MAKESILENT) -f list\CMakeFiles\list.dir\build.make list/CMakeFiles/list.dir/depend
+	$(MAKE) $(MAKESILENT) -f list\CMakeFiles\list.dir\build.make list/CMakeFiles/list.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2 "Built target list"
+.PHONY : list/CMakeFiles/list.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Project.dir/all
+list/CMakeFiles/list.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 list/CMakeFiles/list.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 0
-.PHONY : CMakeFiles/Project.dir/rule
+.PHONY : list/CMakeFiles/list.dir/rule
 
 # Convenience name for target.
-Project: CMakeFiles/Project.dir/rule
-.PHONY : Project
+list: list/CMakeFiles/list.dir/rule
+.PHONY : list
 
 # codegen rule for target.
-CMakeFiles/Project.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target Project"
-.PHONY : CMakeFiles/Project.dir/codegen
+list/CMakeFiles/list.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f list\CMakeFiles\list.dir\build.make list/CMakeFiles/list.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=1,2 "Finished codegen for target list"
+.PHONY : list/CMakeFiles/list.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Project.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/clean
-.PHONY : CMakeFiles/Project.dir/clean
+list/CMakeFiles/list.dir/clean:
+	$(MAKE) $(MAKESILENT) -f list\CMakeFiles\list.dir\build.make list/CMakeFiles/list.dir/clean
+.PHONY : list/CMakeFiles/list.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/tests_list.dir
+
+# All Build rule for target.
+tests/CMakeFiles/tests_list.dir/all: list/CMakeFiles/list.dir/all
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_list.dir\build.make tests/CMakeFiles/tests_list.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_list.dir\build.make tests/CMakeFiles/tests_list.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=3,4 "Built target tests_list"
+.PHONY : tests/CMakeFiles/tests_list.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/tests_list.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/tests_list.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parky\N\build\CMakeFiles 0
+.PHONY : tests/CMakeFiles/tests_list.dir/rule
+
+# Convenience name for target.
+tests_list: tests/CMakeFiles/tests_list.dir/rule
+.PHONY : tests_list
+
+# codegen rule for target.
+tests/CMakeFiles/tests_list.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_list.dir\build.make tests/CMakeFiles/tests_list.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\parky\N\build\CMakeFiles --progress-num=3,4 "Finished codegen for target tests_list"
+.PHONY : tests/CMakeFiles/tests_list.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/tests_list.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests_list.dir\build.make tests/CMakeFiles/tests_list.dir/clean
+.PHONY : tests/CMakeFiles/tests_list.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

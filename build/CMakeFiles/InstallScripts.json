@@ -1,7 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/parky/N/build/cmake_install.cmake"
+		"C:/Users/parky/N/build/cmake_install.cmake",
+		"C:/Users/parky/N/build/list/cmake_install.cmake",
+		"C:/Users/parky/N/build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
