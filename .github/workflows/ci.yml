@@ -24,7 +24,7 @@ jobs:
         cmake .. -DCMAKE_BUILD_TYPE=Debug
         cmake --build .
     
-    - name: Testr run
-      run: ${{github.workspace}}/build/MyAwesomeProgram
+    - name: Test run
+      run: ./build/test_runner
 
    
