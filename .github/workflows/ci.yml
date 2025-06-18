@@ -27,6 +27,6 @@ jobs:
     - name: Test run
       run: |
             cd build
-            ./tests/main.cpp
+            ./tests/tests_list
 
    
