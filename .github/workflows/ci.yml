@@ -25,6 +25,6 @@ jobs:
         cmake --build .
     
     - name: Test run
-      run: ./build/test_runner
+      run: ./tests/main.cpp
 
    
